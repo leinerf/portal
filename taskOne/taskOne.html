@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portal</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<p class="blueColor">Hello World!</p>
+	<button id="colorChanger">Press to change the color</button>
+</body>
+<script type="text/javascript">
+	button = document.getElementById('colorChanger');
+	text = document.getElementsByTagName('p');
+	
+
+	console.log(button.classList)
+	button.addEventListener('click',function(){
+		if(text[0].className === 'blueColor'){
+			text[0].className = 'yellowColor';
+		}
+		else{
+			text[0].className = 'blueColor';
+		}
+		 
+		
+		
+	})
+</script>
+</html>
